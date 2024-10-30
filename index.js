@@ -69,7 +69,7 @@ player.events.on('error', (queue, error) => {
 });
 
 // For debugging
-/*player.on('debug', async (message) => {
+player.on('debug', async (message) => {
     console.log(`General player debug event: ${message}`);
 });
 
@@ -80,7 +80,7 @@ player.events.on('debug', async (queue, message) => {
 player.events.on('playerError', (queue, error) => {
     console.log(`Player error event: ${error.message}`);
     console.log(error);
-});*/
+});
 
 client.on('ready', function () {
     console.log('Ready!');
